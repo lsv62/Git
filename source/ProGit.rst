@@ -91,3 +91,23 @@ Initializing a Repository in an Existing Directory
 .. code-block::
 
     git init
+
+Do  an  initial  commint:
+
+.. code-block::
+
+    git add *.rst
+    git commit -m 'Initial project version'
+
+Ignoring Files
+--------------
+
+Patterns for .gitignore
+
+* blank lines or lines starting with # are ignored
+* end patterns with a forward slash (/) to specify a directory
+* negate a pattern by starting it with an exclamation point (!)
+* an asterisk (*) matches zero or more characters
+* [abc] matches any character inside the bracket
+* a question mark (?) matches a single characte
+* two asterisks to match nested directories `a/**/z`
