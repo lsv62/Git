@@ -111,3 +111,27 @@ Patterns for .gitignore
 * [abc] matches any character inside the bracket
 * a question mark (?) matches a single characte
 * two asterisks to match nested directories `a/**/z`
+
+Cloning an Existing Repository
+------------------------------
+
+Git  receives  a  full  copy  of  nearly  all  data  that the  server  has. 
+
+.. code-block::
+
+    git clone https://github.com/lsv62/SW400pro.git
+
+Checking the Status of Your Files
+---------------------------------
+
+.. code-block::
+
+    git status
+
+Tracking New Files
+------------------
+
+.. code-block::
+
+    cd sourse
+    git add ProGit.rst
