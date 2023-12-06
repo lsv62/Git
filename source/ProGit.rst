@@ -135,3 +135,25 @@ Tracking New Files
 
     cd sourse
     git add ProGit.rst
+
+Viewing Your Staged and Unstaged Change
+---------------------------------------
+
+To know exactly what you changed before staging use the git diff command: 
+
+.. code-block::
+
+    git diff
+
+To compare what is in your working directory with what is in your staging area.
+
+.. code-block::
+
+    git diff --staged
+
+Committing Your Changes
+-----------------------
+
+.. code-block::
+
+    git commit
