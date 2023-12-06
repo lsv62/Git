@@ -162,4 +162,5 @@ To commit changis without staging use following:
 
 .. code-block::
 
-    git commit -a -m "add comment to commit"
+    git commit -a -m "commit without staging"
+    
