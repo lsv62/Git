@@ -156,4 +156,10 @@ Committing Your Changes
 
 .. code-block::
 
-    git commit
+    git commit -m "add comment to commit"
+
+To commit changis without staging use following:
+
+.. code-block::
+
+    git commit -a -m "add comment to commit"
