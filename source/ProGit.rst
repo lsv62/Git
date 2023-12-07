@@ -164,3 +164,26 @@ To commit changis without staging use following:
 
     git commit -a -m "commit without staging"
     
+Removing Files
+--------------
+
+Remove readme.md file from disk
+
+.. code-block::
+
+    rm readme.md
+
+And add it removing to stage 
+
+.. code-block::
+
+    git rm readme.md
+
+To remove file just from staing area 
+
+.. code-block::
+
+    git rm --cached readme.md
+
+Viewing the Commit History
+--------------------------
