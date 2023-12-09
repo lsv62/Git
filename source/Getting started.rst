@@ -14,11 +14,6 @@ Local Operations
 Nealy all operations on Git is local and doesn't depend upon network even for hystory of project.
 If you offline you can commit and save changes when you get to net later.
 
-Only Adds Data
---------------
-
-After you commit snapshot it's very difficult to lose data especially if you refularly push your database to another repo.
-
 File states
 -----------
 
@@ -31,41 +26,41 @@ File states
 :Commited:
     File saved in local database
 
-The Command Line
-----------------
-
-The command line is the only place you can use all git command.
-
 Git Setup
 ---------
 
 git config let you get to 3 configuration files
 
-* --system in [path]/etc/gitconfig that contains configuration for all users
-* --global in [user]/.gitconfig that contains confu=iguration for user
-* --local in .git/config that contains configuration for repo
+.. glossary:: 
 
-To show local config for example use following:
+    git config
+        lets you get and set configuration variables that control all aspects of how Git looks and operate
 
-.. code-block::
+    git config --system 
+        in [path]/etc/gitconfig contains configuration for all users
+
+    git config --global 
+        in [user]/.gitconfig contains confu=iguration for user
+
+    git config --local 
+        in .git/config that configuration for repo
 
     git config --local --list --show-origin
-
-Or if you want to see all your configs:
-
-.. code-block::
+        show local config
 
     git config --list
+        see all your configs
 
 Your Identity
 -------------
 
-Every  Git  commit  uses  this  information
-
-.. code-block::
+.. glossary:: 
 
     git config --global user.name "LSV"
+        set your user name that necessary for commits
+
     git config --global user.email lsv@kotris.ua
+        set your e-mail that necessary for commits
 
 Getting Help
 ------------
@@ -187,3 +182,23 @@ To remove file just from staing area
 
 Viewing the Commit History
 --------------------------
+
+Option of Git log
+
+.. code-block::
+
+    - p Show the patch introduced with each commit.
+    --stat Show statistics for files modified in each commit.
+    --shortstat Display only the changed/insertions/deletions line from the --stat command.
+    --name-only Show the list of files modified after the commit information.
+    --name-status Show the list of files affected with added/modified/deleted information as well.
+    --abbrev-commit Show only the first few characters of the SHA-1 checksum instead of all 40.
+    --relative-date Display the date in a relative format (for example, “2 weeks ago”) instead of
+        using the full date format.
+    --graph Display an ASCII graph of the branch and merge history beside the log output.
+    --pretty Show commits in an alternate format. Option values include oneline, short,
+        full, fuller, and format (where you specify your own format).
+    --oneline Shorthand for --pretty=oneline --abbrev-commit used together.
+
+Undoing Things
+--------------
