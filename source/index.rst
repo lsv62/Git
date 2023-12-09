@@ -11,7 +11,8 @@ Welcome to Pro Git's documentation!
    :caption: Contents:
    :numbered:
 
-   Getting started
+   Getting Started
+   Git Basics
 
 Indices and tables
 ==================
