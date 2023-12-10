@@ -2,20 +2,23 @@
 Getting Started
 ===============
 
+What is Git?
+------------
+
 Snapshots
----------
+~~~~~~~~~
 
 Every time you commit Git save snapshot that contains all changes in files references to previous snapshot 
 fir files that isn't chnaged.
 
-Local Operations
-----------------
+Nearly Every Operation Is Local
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Nealy all operations on Git is local and doesn't depend upon network even for hystory of project.
 If you offline you can commit and save changes when you get to net later.
 
-File states
------------
+The Three State
+~~~~~~~~~~~~~~~
 
 :Modified:
     File has a changing
@@ -26,8 +29,8 @@ File states
 :Commited:
     File saved in local database
 
-Git Setup
----------
+First-Time Git Setup
+--------------------
 
 .. glossary:: 
 
@@ -50,7 +53,7 @@ Git Setup
         see all your configs
 
 Your Identity
--------------
+~~~~~~~~~~~~~
 
 .. glossary:: 
 

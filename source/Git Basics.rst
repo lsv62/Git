@@ -1,8 +1,11 @@
 Git Basics
 ==========
 
+Getting a Git Repository
+------------------------
+
 Initializing a Repository in an Existing Directory
---------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block::
 
@@ -15,8 +18,41 @@ Do  an  initial  commint:
     git add *.rst
     git commit -m 'Initial project version'
 
+Cloning an Existing Repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Git  receives  a  full  copy  of  nearly  all  data  that the  server  has. 
+
+.. code-block::
+
+    git clone https://github.com/lsv62/SW400pro.git
+
+Recording Changes to the Repository
+-----------------------------------
+
+Checking the Status of Your Files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block::
+
+    git status
+
+Tracking New Files
+~~~~~~~~~~~~~~~~~~
+
+.. code-block::
+
+    cd sourse
+    git add ProGit.rst
+
+Staging Modified File
+~~~~~~~~~~~~~~~~~~~~~
+
+Short Status
+~~~~~~~~~~~~
+
 Ignoring Files
---------------
+~~~~~~~~~~~~~~
 
 Patterns for .gitignore
 
@@ -28,32 +64,8 @@ Patterns for .gitignore
 * a question mark (?) matches a single characte
 * two asterisks to match nested directories `a/**/z`
 
-Cloning an Existing Repository
-------------------------------
-
-Git  receives  a  full  copy  of  nearly  all  data  that the  server  has. 
-
-.. code-block::
-
-    git clone https://github.com/lsv62/SW400pro.git
-
-Checking the Status of Your Files
----------------------------------
-
-.. code-block::
-
-    git status
-
-Tracking New Files
-------------------
-
-.. code-block::
-
-    cd sourse
-    git add ProGit.rst
-
 Viewing Your Staged and Unstaged Change
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To know exactly what you changed before staging use the git diff command: 
 
@@ -68,7 +80,7 @@ To compare what is in your working directory with what is in your staging area.
     git diff --staged
 
 Committing Your Changes
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block::
 
@@ -81,7 +93,7 @@ To commit changis without staging use following:
     git commit -a -m "commit without staging"
     
 Removing Files
---------------
+~~~~~~~~~~~~~~
 
 Remove readme.md file from disk
 
@@ -100,6 +112,9 @@ To remove file just from staing area
 .. code-block::
 
     git rm --cached readme.md
+
+Moving Files
+~~~~~~~~~~~~
 
 Viewing the Commit History
 --------------------------
@@ -121,5 +136,65 @@ Option of Git log
         full, fuller, and format (where you specify your own format).
     --oneline Shorthand for --pretty=oneline --abbrev-commit used together.
 
+Limiting Log Output
+~~~~~~~~~~~~~~~~~~~
+
 Undoing Things
 --------------
+
+Unstaging a Staged File
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Undoing things with git restore
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Unstaging a Staged File with git restor
+"""""""""""""""""""""""""""""""""""""""
+
+Unmodifying a Modified File with git restore
+""""""""""""""""""""""""""""""""""""""""""""
+
+Working with Remotes
+--------------------
+
+Showing Your Remotes
+~~~~~~~~~~~~~~~~~~~~
+
+Adding Remote Repositories
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Fetching and Pulling from Your Remotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Pushing to Your Remotes
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Inspecting a Remote
+~~~~~~~~~~~~~~~~~~~
+
+Renaming and Removing Remotes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tagging
+-------
+
+Listing Your Tags
+~~~~~~~~~~~~~~~~~
+
+Creating Tags
+~~~~~~~~~~~~~
+
+Annotated Tags
+~~~~~~~~~~~~~~
+
+Tagging Later
+~~~~~~~~~~~~~
+
+Sharing Tags
+~~~~~~~~~~~~
+
+Deleting Tags
+~~~~~~~~~~~~~
+
+Checking out Tags
+~~~~~~~~~~~~~~~~~
