@@ -29,7 +29,7 @@ Checking the Status of Your Files
 .. glossary::
 
     ``status``
-         determine which files are in which sta
+         determine which files are in which stage
 
 Tracking New Files
 ~~~~~~~~~~~~~~~~~~
@@ -74,36 +74,29 @@ Viewing Your Staged and Unstaged Change
 Committing Your Changes
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block::
+.. glossary::
 
-    git commit -m "add comment to commit"
+    ``commit -m "..."``
+         commit changes
 
-To commit changis without staging use following:
+Skipping the Staging Area
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block::
+.. glossary::
 
-    git commit -a -m "commit without staging"
+    ``commit -a -m "..."``
+        commit changis without staging
     
 Removing Files
 ~~~~~~~~~~~~~~
 
-Remove readme.md file from disk
+.. glossary::
 
-.. code-block::
-
-    rm readme.md
-
-And add it removing to stage 
-
-.. code-block::
-
-    git rm readme.md
-
-To remove file just from staing area 
-
-.. code-block::
+    ``rm ...``
+         stages the file’s removal
 
     git rm --cached readme.md
+        remove from staging area accidently staged file 
 
 Moving Files
 ~~~~~~~~~~~~
