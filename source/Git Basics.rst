@@ -95,7 +95,7 @@ Removing Files
     ``rm ...``
          stages the file’s removal
 
-    git rm --cached readme.md
+    ``rm --cached ...``
         remove from staging area accidently staged file 
 
 Moving Files
