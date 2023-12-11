@@ -7,25 +7,18 @@ Getting a Git Repository
 Initializing a Repository in an Existing Directory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block::
+.. glossary::
 
-    git init
-
-Do  an  initial  commint:
-
-.. code-block::
-
-    git add *.rst
-    git commit -m 'Initial project version'
+    ``init``
+        start version  control with  Git
 
 Cloning an Existing Repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Git  receives  a  full  copy  of  nearly  all  data  that the  server  has. 
+.. glossary::
 
-.. code-block::
-
-    git clone https://github.com/lsv62/SW400pro.git
+    ``clone https://github.com/...``
+          copy  of  an  existing  Git  reposito
 
 Recording Changes to the Repository
 -----------------------------------
@@ -33,23 +26,26 @@ Recording Changes to the Repository
 Checking the Status of Your Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block::
+.. glossary::
 
-    git status
+    ``status``
+         determine which files are in which sta
 
 Tracking New Files
 ~~~~~~~~~~~~~~~~~~
 
-.. code-block::
+.. glossary::
 
-    cd sourse
-    git add ProGit.rst
-
-Staging Modified File
-~~~~~~~~~~~~~~~~~~~~~
+    ``add ...``
+         begin  tracking  a  new  file
 
 Short Status
 ~~~~~~~~~~~~
+
+.. glossary::
+
+    ``status -s``
+          see  your  changes  in  a  more  compact  way
 
 Ignoring Files
 ~~~~~~~~~~~~~~
@@ -67,17 +63,13 @@ Patterns for .gitignore
 Viewing Your Staged and Unstaged Change
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To know exactly what you changed before staging use the git diff command: 
+.. glossary::
 
-.. code-block::
+    ``diff``
+        see what you’ve changed but not yet staged
 
-    git diff
-
-To compare what is in your working directory with what is in your staging area.
-
-.. code-block::
-
-    git diff --staged
+    ``diff --staged``
+        compare what is in your working directory with what is in your staging area
 
 Committing Your Changes
 ~~~~~~~~~~~~~~~~~~~~~~~

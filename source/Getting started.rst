@@ -34,22 +34,22 @@ First-Time Git Setup
 
 .. glossary:: 
 
-    ``git config``
+    ``config``
         lets you get and set configuration variables that control all aspects of how Git looks and operate
 
-    ``git config --system``
+    ``config --system``
         in [path]/etc/gitconfig contains configuration for all users
 
-    ``git config --global``
+    ``config --global``
         in [user]/.gitconfig contains configuration for user
 
-    ``git config --local`` 
+    ``config --local`` 
         in .git/config that configuration for repo
 
-    ``git config --local --list --show-origin``
+    ``config --local --list --show-origin``
         show local config
 
-    ``git config --list``
+    ``config --list``
         see all your configs
 
 Your Identity
@@ -57,10 +57,10 @@ Your Identity
 
 .. glossary:: 
 
-    ``git config --global user.name "LSV"``
+    ``config --global user.name "..."``
         set your user name that necessary for commits
 
-    ``git config --global user.email lsv@kotris.ua``
+    ``config --global user.email ...``
         set your e-mail that necessary for commits
 
 Getting Help
@@ -68,9 +68,9 @@ Getting Help
 
 .. glossary:: 
 
-    ``git help config``
+    ``help config``
         getting offline help
 
-    ``git config -h``
+    ``config -h``
         getting brief help
 
