@@ -17,8 +17,8 @@ Cloning an Existing Repository
 
 .. glossary::
 
-    ``clone https://github.com/...``
-          copy  of  an  existing  Git  reposito
+    ``clone https://github.com/<repository>``
+          copy  of  an  existing  Git  repository
 
 Recording Changes to the Repository
 -----------------------------------
@@ -36,7 +36,7 @@ Tracking New Files
 
 .. glossary::
 
-    ``add ...``
+    ``add <file>``
          begin  tracking  a  new  file
 
 Short Status
@@ -76,7 +76,7 @@ Committing Your Changes
 
 .. glossary::
 
-    ``commit -m "..."``
+    ``commit -m "commit message"``
          commit changes
 
 Skipping the Staging Area
@@ -84,7 +84,7 @@ Skipping the Staging Area
 
 .. glossary::
 
-    ``commit -a -m "..."``
+    ``commit -a -m "commit message"``
         commit changis without staging
     
 Removing Files
@@ -92,10 +92,10 @@ Removing Files
 
 .. glossary::
 
-    ``rm ...``
+    ``rm <file>``
          stages the file’s removal
 
-    ``rm --cached ...``
+    ``rm --cached <file>``
         remove from staging area accidently staged file 
 
 Moving Files
@@ -103,7 +103,7 @@ Moving Files
 
 .. glossary::
 
-    ``mv file_from file_to``
+    ``mv <file_from> <file_to>``
         renave file and add to stage
 
 Viewing the Commit History
@@ -128,7 +128,7 @@ Limiting Log Output
     ``log --since=2.weeks``
          list of commits made in the last two week
 
-     ``log -- path/to/file``
+    ``log -- path/to/file``
          limit the log output to commits that introduced a change to those file
 
 Undoing Things
@@ -142,14 +142,29 @@ Undoing Things
 Unstaging a Staged File
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+.. glossary::
+
+    ``reset HEAD <file>``
+         unstage the file
+
+Unmodifying a Modified File
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    ``checkout -- <file>``
+        discard changes in working directory
+
 Undoing things with git restore
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Unstaging a Staged File with git restor
-"""""""""""""""""""""""""""""""""""""""
+.. glossary::
 
-Unmodifying a Modified File with git restore
-""""""""""""""""""""""""""""""""""""""""""""
+    ``restore --staged <file>``
+        unstage file
+
+    ``restore <file>``
+        discard the changes in file
 
 Working with Remotes
 --------------------
@@ -157,8 +172,18 @@ Working with Remotes
 Showing Your Remotes
 ~~~~~~~~~~~~~~~~~~~~
 
+.. glossary::
+
+    ``remote -v``
+        shows you the remote server URLs
+
 Adding Remote Repositories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    ``remote add <shortname> <url>``
+        add  a  new  remote  Git repository as a shortname you can reference easily
 
 Fetching and Pulling from Your Remotes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
