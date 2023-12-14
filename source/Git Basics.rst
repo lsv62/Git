@@ -18,7 +18,7 @@ Cloning an Existing Repository
 .. glossary::
 
     ``clone https://github.com/<repository>``
-          copy  of  an  existing  Git  repository
+          copy of an existing git repository and sets up local master to track remote
 
 Recording Changes to the Repository
 -----------------------------------
@@ -188,11 +188,29 @@ Adding Remote Repositories
 Fetching and Pulling from Your Remotes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. glossary::
+
+    ``fetch origin``
+        download data from remote clone repository
+
+    ``pull``
+        fetch and merge remote branch to your current branch
+
 Pushing to Your Remotes
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+.. glossary::
+
+    ``push origin maste``
+        push your master branch to your  origin  server (you'll have to fetch first if someone else push upstream before)
+
 Inspecting a Remote
 ~~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    ``remote show origin``
+        lists the URL for the remote repository as well as the tracking branch information
 
 Renaming and Removing Remotes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
