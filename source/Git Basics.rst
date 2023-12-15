@@ -201,7 +201,7 @@ Pushing to Your Remotes
 
 .. glossary::
 
-    ``push origin maste``
+    ``push origin master``
         push your master branch to your  origin  server (you'll have to fetch first if someone else push upstream before)
 
 Inspecting a Remote
@@ -215,20 +215,49 @@ Inspecting a Remote
 Renaming and Removing Remotes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. glossary::
+
+    ``remote rename <old name> <new name>``
+        change a remote's shortname
+
+    ``remote remove <name>``
+         remove a remote
+
 Tagging
 -------
 
 Listing Your Tags
 ~~~~~~~~~~~~~~~~~
 
-Creating Tags
-~~~~~~~~~~~~~
+.. glossary::
+
+    ``tag``
+        listing your Tags
 
 Annotated Tags
 ~~~~~~~~~~~~~~
 
+.. glossary::
+
+    ``tag -a v<version> -m "tag message"``
+        Create  an  annotated  tag
+
+    ``show v<tag version>``
+        see the tag data along with the commit that was tagged
+
+Lightweight Tags
+~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    ``tag v<tag version>``
+         tag commits with a lightweight tag
+
 Tagging Later
 ~~~~~~~~~~~~~
+
+    ``tag -a v<tag version> <part of commit checksum>``
+         tag commit with the commit checksum
 
 Sharing Tags
 ~~~~~~~~~~~~
