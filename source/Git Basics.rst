@@ -239,10 +239,10 @@ Annotated Tags
 
 .. glossary::
 
-    ``tag -a v<version> -m "tag message"``
+    ``tag -a <tagname> -m "tag message"``
         Create  an  annotated  tag
 
-    ``show v<tag version>``
+    ``show <tag version>``
         see the tag data along with the commit that was tagged
 
 Lightweight Tags
@@ -250,20 +250,43 @@ Lightweight Tags
 
 .. glossary::
 
-    ``tag v<tag version>``
+    ``tag <tagname>``
          tag commits with a lightweight tag
 
 Tagging Later
 ~~~~~~~~~~~~~
 
-    ``tag -a v<tag version> <part of commit checksum>``
+.. glossary::
+
+    ``tag -a <tagname> <part of commit checksum>``
          tag commit with the commit checksum
 
 Sharing Tags
 ~~~~~~~~~~~~
 
+.. glossary::
+
+    ``push origin <tagname>``
+         transfer tags to remote server
+
+    ``push origin --tags``
+         a lot of tags to push up at on server
+
 Deleting Tags
 ~~~~~~~~~~~~~
 
+.. glossary::
+
+    ``tag -d <tagname>``
+         delete  a  tag  on  local  repository
+
+    ``push origin --delete <tagname>``
+         remove the tag from any remote servers
+
 Checking out Tags
 ~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    ``checkout <tagname>``
+         view the versions of files a tag is pointing t
