@@ -14,6 +14,7 @@ Welcome to Pro Git's documentation!
 
    Getting Started
    Git Basics
+   Git Branching
 
 Indices and tables
 ==================
