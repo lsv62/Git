@@ -128,7 +128,7 @@ Limiting Log Output
     ``log --since=2.weeks``
          list of commits made in the last two week
 
-    ``log -- path/to/file``
+    ``log -- <path/to/file>``
          limit the log output to commits that introduced a change to those file
 
 Undoing Things
@@ -289,4 +289,4 @@ Checking out Tags
 .. glossary::
 
     ``checkout <tagname>``
-         view the versions of files a tag is pointing t
+         view the versions of files a tag is pointing to
