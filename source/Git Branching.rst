@@ -22,8 +22,28 @@ Creating a New Branch
 Switching Branches
 ~~~~~~~~~~~~~~~~~~
 
+.. glossary::
+
+    ``switch <branch name>``
+        switches to an existing branch, moves HEAD to the branch and change file in working directory
+
+    ``switch -c <newbranchname>``
+        Creating a new branch and switching to it at the same time
+
+    ``switch -.``
+        Return to your previously checked out branch
+
 Basic Branching and Merging
 ---------------------------
+
+Basic Branching
+~~~~~~~~~~~~~~~
+
+Basic Merging
+~~~~~~~~~~~~~
+
+Basic Merge Conflicts
+~~~~~~~~~~~~~~~~~~~~~
 
 Branch Management
 -----------------
