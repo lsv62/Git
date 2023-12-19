@@ -39,6 +39,13 @@ Basic Branching and Merging
 Basic Branching
 ~~~~~~~~~~~~~~~
 
+It’s best  to  have  a  clean  working  state  by commiting changes when  you  switch  branches.
+
+.. glossary::
+
+    ``merge <branch name>``
+        merge the branch back into master branch
+
 Basic Merging
 ~~~~~~~~~~~~~
 
