@@ -44,7 +44,10 @@ It’s best  to  have  a  clean  working  state  by commiting changes when  you 
 .. glossary::
 
     ``merge <branch name>``
-        merge the branch back into master branch
+        merge the branch back into current branch
+
+    ``branch -d <branch name>``
+        delete branch
 
 Basic Merging
 ~~~~~~~~~~~~~
