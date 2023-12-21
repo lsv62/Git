@@ -49,11 +49,11 @@ It’s best  to  have  a  clean  working  state  by commiting changes when  you 
     ``branch -d <branch name>``
         delete branch
 
-Basic Merging
-~~~~~~~~~~~~~
-
 Basic Merge Conflicts
 ~~~~~~~~~~~~~~~~~~~~~
+
+Git adds standard conflict-resolution  markers  to  the  files  that  have  conflicts,  
+so  you  can  open  them  manually  and resolve those conflicts.
 
 Branch Management
 -----------------
