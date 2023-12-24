@@ -12,9 +12,9 @@ Welcome to Pro Git's documentation!
    :hidden:
    :numbered:
 
-   Getting Started
-   Git Basics
-   Git Branching
+   1 Getting Started
+   2 Git Basics
+   3 Git Branching
 
 Indices and tables
 ==================
