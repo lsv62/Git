@@ -14,7 +14,7 @@ Welcome to Pro Git's documentation!
 
    1 Getting Started
    2 Git Basics
-   3 Git Branchingq
+   3 Git Branching
    4 Git on the Server
    5 Distributed Git
    6 GitHub
