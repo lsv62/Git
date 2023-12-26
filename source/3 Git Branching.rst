@@ -58,6 +58,35 @@ so  you  can  open  them  manually  and resolve those conflicts.
 Branch Management
 -----------------
 
+.. glossary::
+
+    ``branch -v``
+        To  see  the  last  commit  on  each branch
+
+    ``branch --merged``
+        see which branches are already merged into the branch you’re on.
+        Branches on this list without the * in front of them are generally fine to delete
+
+    ``branch --no-merged``
+        see all the branches that contain work you haven’t yet merge
+
+    ``branch -D <branch name>``
+        delete unmerged branch
+
+Changing a branch name
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    ``branch --move old-branch-name new-branch-name``
+        replaces  your  branch name  locally
+
+    ``push --set-upstream origin new-branch-name``
+        replaces  your  branch name  remotely
+
+    ``push origin --delete <branch-name>``
+        delete remote branch
+
 Branching Workflows
 -------------------
 
