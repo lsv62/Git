@@ -91,5 +91,16 @@ Changing a branch name
 Remote Branches
 ---------------
 
+.. glossary::
+
+    ``remote  show  <remote>``
+        full list of remote references
+
+    ``fetch  origin``
+        synchronize  local  with  a  remote
+
+Pushing
+~~~~~~~
+
 Rebasing
 --------
