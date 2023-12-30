@@ -102,5 +102,19 @@ Remote Branches
 Pushing
 ~~~~~~~
 
+.. glossary::
+
+    ``push <remote> <branch>``
+         push branch up to remote
+
+    ``merge origin/<branch>``
+        merge remote branch into your current working Branch
+
+    ``checkout -b <branch> origin/<branch>``
+        getting local copy of  remote-tracking branch
+
+Tracking Branches
+~~~~~~~~~~~~~~~~~
+
 Rebasing
 --------
