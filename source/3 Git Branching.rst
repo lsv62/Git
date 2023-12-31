@@ -116,5 +116,20 @@ Pushing
 Tracking Branches
 ~~~~~~~~~~~~~~~~~
 
+.. glossary::
+
+    ``checkout --track origin/<branch>``
+        set  up  tracking  branch
+
+    ``branch -u origin/<branch>``
+          set remote <branch> to the same local for tracking
+
+    ``branch -vv``
+        see what tracking branches you have set upstream. 
+        This command’s telling you about what it has cached from these servers locally
+
+    ``fetch --all``
+         totally up to date ahead and behind from all your remotes
+         
 Rebasing
 --------
