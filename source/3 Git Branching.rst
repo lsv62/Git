@@ -133,3 +133,13 @@ Tracking Branches
          
 Rebasing
 --------
+
+The Basic Rebase
+~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    ``rebase <branch>``
+        replays  changes  from  one  line  of  work  onto  another  in the order they were introduced, 
+        whereas merging takes the endpoints and merges them together
+        
