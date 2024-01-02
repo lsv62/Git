@@ -73,6 +73,9 @@ Branch Management
     ``branch -D <branch name>``
         delete unmerged branch
 
+    ``branch --all``
+        lists both the local and the remote tracking branches
+
 Changing a branch name
 ~~~~~~~~~~~~~~~~~~~~~~
 
