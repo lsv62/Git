@@ -12,16 +12,16 @@ Welcome to Pro Git's documentation!
    :hidden:
    :numbered:
 
-   1 Getting Started
-   2 Git Basics
-   3 Git Branching
-   4 Git on the Server
-   5 Distributed Git
-   6 GitHub
-   7 Git Tools
-   8 Customizing Git
-   9 Git and Other Systems
-   10 Git Internals
+   getting-started
+   basics
+   branching
+   server
+   distributed-git
+   github
+   tools
+   customizing
+   other-systems
+   internals
 
 Indices and tables
 ==================

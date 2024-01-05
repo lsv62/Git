@@ -13,8 +13,35 @@ Local Protocol
     ``clone <path>/.git``
           clone a local repository from <path>/.git to current folder
 
-Getting Git on a Serve
-----------------------
+The HTTP Protocols
+~~~~~~~~~~~~~~~~~~
+
+Smart HTTP
+""""""""""
+
+.. glossary::
+
+    Smart HTT
+        use username/password  authentication
+
+Dumb HTTP
+"""""""""
+
+.. glossary::
+
+    Dumb HTTP
+        expects the Git repository to be served like normal files from the web server. 
+
+The SSH Protocol
+~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    ``clone ssh://[user@]server/project.git``
+         clone a Git repository over SSH
+
+Getting Git on a Server
+-----------------------
 
 Generating Your SSH Public Ke
 -----------------------------
