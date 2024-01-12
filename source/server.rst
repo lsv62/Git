@@ -37,8 +37,8 @@ The SSH Protocol
 
 .. glossary::
 
-    ``clone ssh://[user@]server/project.git``
-         clone a Git repository over SSH
+    ``clone ssh://[user@]server/.git``
+        clone a Git repository over SSH with optional username
 
 Getting Git on a Server
 -----------------------
