@@ -43,6 +43,14 @@ The SSH Protocol
 Getting Git on a Server
 -----------------------
 
+.. glossary::
+
+    ``clone --bare <project_dir> <new-project-dir.git``
+         clone and create a new bare repository in new-project-dir.git directory without  a  working  directory
+
+Putting the Bare Repository on a Server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Generating Your SSH Public Ke
 -----------------------------
 
