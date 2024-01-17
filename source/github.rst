@@ -13,5 +13,23 @@ SSH Access
     New SSH Key
         enter a keyname and paste  the  contents of id_ed25519.pub from .ssh dir
 
-Contributing to a Projec
+Contributing to a Project
 -------------------------
+
+The GitHub Flow
+~~~~~~~~~~~~~~~~~
+
+Creating a Pull Request
+"""""""""""""""""""""""""""
+
+.. glossary::
+
+    merge pull request locally
+        pull  the  branch  down  and  merge  it  locally into the master branch and push it to GitHub, 
+        the Pull Request will automatically be close
+
+Advanced Pull Requests
+~~~~~~~~~~~~~~~~~~~~~~
+
+Keeping up with Upstream
+"""""""""""""""""""""""""""""
