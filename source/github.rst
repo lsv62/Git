@@ -33,3 +33,12 @@ Advanced Pull Requests
 
 Keeping up with Upstream
 """""""""""""""""""""""""""""
+
+.. glossary::
+
+    Options to resolve conflict 
+        * rebase  your  branch  on  top  of the target branch
+        * merge the target branch into branch
+
+Keep your GitHub public repository up-to-date
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
