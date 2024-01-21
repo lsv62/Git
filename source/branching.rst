@@ -99,7 +99,7 @@ Remote Branches
     ``remote  show  <remote>``
         full list of remote references
 
-    ``fetch  origin``
+    ``fetch  <remote>``
         synchronize  local  with  a  remote
 
 Pushing
