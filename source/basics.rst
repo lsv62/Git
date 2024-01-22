@@ -191,7 +191,7 @@ Fetching and Pulling from Your Remotes
 .. glossary::
 
     ``fetch origin``
-        download data from remote clone repository
+        download references to all the branches from remote to merge in or inspect
 
     ``pull``
         fetch and merge remote branch to your current branch
