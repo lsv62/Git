@@ -40,5 +40,17 @@ Keeping up with Upstream
         * rebase  your  branch  on  top  of the target branch
         * merge the target branch into branch
 
+GitHub Flavored Markdown
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    task list
+        - [X] something that have already done
+        - [ ] something that have to be done
+
+    responding  to  comment
+        > answer to comment
+
 Keep your GitHub public repository up-to-date
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
