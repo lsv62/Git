@@ -54,3 +54,11 @@ GitHub Flavored Markdown
 
 Keep your GitHub public repository up-to-date
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    Update GitHub  repository
+        * checkout master
+        * pull https://github.com/<user name>/<repo name>
+        * push origin master
+        

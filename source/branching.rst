@@ -96,8 +96,14 @@ Remote Branches
 
 .. glossary::
 
+    ``git ls-remote <remote>``
+        get a full list of remote references
+
+    ``<remote>/<branch>``
+        remote-tracking  branches - references to the state of remote branches when its was conncted the last time
+
     ``remote  show  <remote>``
-        full list of remote references
+        get a full list of remote references
 
     ``fetch  <remote>``
         synchronize  local  with  a  remote
