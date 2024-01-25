@@ -174,6 +174,9 @@ Showing Your Remotes
 
 .. glossary::
 
+    origin
+        name Git gives to the server you cloned from
+        
     ``remote -v``
         shows you the remote server URLs
 
