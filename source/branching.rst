@@ -90,6 +90,8 @@ Changing a branch name
     ``push origin --delete <branch-name>``
         delete remote branch
 
+Branching Workflows
+----------------------
 
 Remote Branches
 ---------------

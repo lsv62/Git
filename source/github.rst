@@ -16,6 +16,14 @@ SSH Access
 Contributing to a Project
 -------------------------
 
+Forking Projects
+~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    Fork a Project  
+        l make a copy of the project to which you don’t have push access
+
 The GitHub Flow
 ~~~~~~~~~~~~~~~~~
 
