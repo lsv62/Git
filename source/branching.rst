@@ -93,6 +93,19 @@ Changing a branch name
 Branching Workflows
 ----------------------
 
+Long-Running Branches
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+..glossary::
+
+    Developers workflow 
+        * having only stable code in master  branch
+        * another branch to work, test stability and if stable  merge  into  master
+        * other  branches at various levels of stability merge into the branch above
+
+Topic Branches
+~~~~~~~~~~~~~~~~
+
 Remote Branches
 ---------------
 
