@@ -4,19 +4,7 @@ Getting Started
 
 What is Git?
 ------------
-
-Snapshots
-~~~~~~~~~
-
-Every time you commit Git save snapshot that contains all changes in files references to previous snapshot 
-fir files that isn't chnaged.
-
-Nearly Every Operation Is Local
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Nealy all operations on Git is local and doesn't depend upon network even for hystory of project.
-If you offline you can commit and save changes when you get to net later.
-
+git 
 The Three State
 ~~~~~~~~~~~~~~~
 
@@ -34,23 +22,14 @@ First-Time Git Setup
 
 .. glossary:: 
 
-    ``config``
-        lets you get and set configuration variables that control all aspects of how Git looks and operate
+    configuration for all users
+        ``git config --system -l`` in [path]/etc/gitconfig
 
-    ``config --system``
-        in [path]/etc/gitconfig contains configuration for all users
+    configuration for user
+        ``git config --global -l`` in [user]/.gitconfig
 
-    ``config --global``
-        in [user]/.gitconfig contains configuration for user
-
-    ``config --local`` 
-        in .git/config that configuration for repo
-
-    ``config --local --list --show-origin``
-        show local config
-
-    ``config --list``
-        see all your configs
+    configuration for repo
+        ``git config --local -l`` in .git/config that 
 
 Your Identity
 ~~~~~~~~~~~~~
