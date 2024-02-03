@@ -12,7 +12,7 @@ Welcome to Pro Git's documentation!
    :hidden:
    :numbered:
 
-   getting-started
+   починаємо
    basics
    branching
    server
