@@ -12,8 +12,8 @@ Welcome to Pro Git's documentation!
    :hidden:
    :numbered:
 
-   починаємо
-   basics
+   1 Ппочинаємо
+   2 Основи Git
    branching
    server
    distributed-git

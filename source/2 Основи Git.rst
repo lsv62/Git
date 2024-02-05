@@ -1,64 +1,56 @@
-Git Basics
+Основи Git
 ==========
 
-Getting a Git Repository
-------------------------
+Отримання репозиторію Git
+-------------------------
 
-Initializing a Repository in an Existing Directory
+Ініціалізація репозиторію в існуючому каталозі
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    ``init``
-        start version  control with  Git
+    Запустити контроль версій за допомогою Git
+        ``git init``
 
 Cloning an Existing Repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    ``clone https://github.com/<repository>``
-          copy of an existing git repository and sets up local master to track remote
+    Копія існуючого репозиторію git
+        ``git clone https://github.com/<repository>``
 
-Recording Changes to the Repository
+Запис змін до репозиторію
 -----------------------------------
 
-Checking the Status of Your Files
+Перевірка стану ваших файлів
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    ``status``
-         determine which files are in which stage
+    визначити стан файлів
+        ``git status``
 
-Tracking New Files
+Відстеження нових файлів
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    розпочати відстеження нового файлу
+        ``git add <file>``
+
+Ігнорування файлів
 ~~~~~~~~~~~~~~~~~~
 
-.. glossary::
+Шаблони для .gitignore
 
-    ``add <file>``
-         begin  tracking  a  new  file
-
-Short Status
-~~~~~~~~~~~~
-
-.. glossary::
-
-    ``status -s``
-          see  your  changes  in  a  more  compact  way
-
-Ignoring Files
-~~~~~~~~~~~~~~
-
-Patterns for .gitignore
-
-* blank lines or lines starting with # are ignored
-* end patterns with a forward slash (/) to specify a directory
-* negate a pattern by starting it with an exclamation point (!)
-* an asterisk (*) matches zero or more characters
-* [abc] matches any character inside the bracket
-* a question mark (?) matches a single characte
-* two asterisks to match nested directories `a/**/z`
+* порожні рядки або рядки, що починаються з #, ігноруються
+* шаблони закінчуються скісною рискою (/), щоб вказати каталог
+* заперечувати шаблон, починаючи його зі знака оклику (!)
+* зірочка (*) відповідає нулю або більше символів
+* [abc] відповідає будь-якому символу в дужках
+* знак питання (?) відповідає одному символу
+* дві зірочки для відповідності вкладених каталогів `a/**/z`
 
 Viewing Your Staged and Unstaged Change
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

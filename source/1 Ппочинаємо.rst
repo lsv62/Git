@@ -22,7 +22,7 @@
 
 .. glossary:: 
 
-    конфігурація для всіх користувачів [path]/etc/gitconfig
+    конфігурація для всіх користувачів c:/Program Files/Git/etc/gitconfig
         ``git config --system -l``
 
     конфігурація для користувача [user]/.gitconfig
