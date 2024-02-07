@@ -20,6 +20,15 @@ Cloning an Existing Repository
     Копія існуючого репозиторію git
         ``git clone https://github.com/<repository>``
 
+    Клонувати з локального сховища
+        ``git clone -l``
+
+    Клонувати лише одну гілку, HEAD або --branch
+        ``git clone --single-branch``
+
+    Клонувати віддалену гілку замість HEAD
+        ``git clone -b``
+
 Запис змін до репозиторію
 -----------------------------------
 
@@ -28,8 +37,17 @@ Cloning an Existing Repository
 
 .. glossary::
 
-    визначити стан файлів
+    Статус файлів
         ``git status``
+
+    Статус коротко 
+        ``git status -s``
+
+    Статус гілки
+        ``git status -b``
+
+    Статус ігнорованих файлів
+        ``git status --ignored``
 
 Відстеження нових файлів
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,16 +70,13 @@ Cloning an Existing Repository
 * знак питання (?) відповідає одному символу
 * дві зірочки для відповідності вкладених каталогів `a/**/z`
 
-Viewing Your Staged and Unstaged Change
+Перегляд позначений для коміту файлів
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    ``diff``
-        see what you’ve changed but not yet staged
-
-    ``diff --staged``
-        compare what is in your working directory with what is in your staging area
+    змінені, але не помічені для коміту файли
+        ``git diff``
 
 Committing Your Changes
 ~~~~~~~~~~~~~~~~~~~~~~~
