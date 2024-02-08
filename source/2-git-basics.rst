@@ -70,7 +70,7 @@ Cloning an Existing Repository
 * знак питання (?) відповідає одному символу
 * дві зірочки для відповідності вкладених каталогів `a/**/z`
 
-Перегляд позначений для коміту файлів
+Перегляд позначених для коміту файлів
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. glossary::
@@ -78,13 +78,19 @@ Cloning an Existing Repository
     змінені, але не помічені для коміту файли
         ``git diff``
 
-Committing Your Changes
+Закріплення ваших змін
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    ``commit -m "commit message"``
-         commit changes
+    Внести зміни
+        ``git commit -m "commit message"``
+
+    Внести зміни за повідомленням в файлі
+        ``git commit --file <file>``
+
+    Змінити попередній комміт
+        ``git commit --amend``
 
 Skipping the Staging Area
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -94,6 +100,8 @@ Skipping the Staging Area
     ``commit -a -m "commit message"``
         commit changis without staging
     
+.. image:: _static/Transport-command.png
+
 Removing Files
 ~~~~~~~~~~~~~~
 
