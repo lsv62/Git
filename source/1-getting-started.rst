@@ -22,33 +22,40 @@
 
 .. glossary:: 
 
-    конфігурація для всіх користувачів c:/Program Files/Git/etc/gitconfig
-        ``git config --system -l``
+    ``config --system -l``
+        конфігурація для всіх користувачів c:/Program Files/Git/etc/gitconfig
+        
+    ``config --global -l`` 
+        конфігурація для користувача [user]/.gitconfig
 
-    конфігурація для користувача [user]/.gitconfig
-        ``git config --global -l`` 
+    ``config --local -l``
+        конфігурація для репозиторія .git/config
 
-    конфігурація для репозиторія .git/config
-        ``git config --local -l`` 
+Параметри поділено на розділи, де повне ім’я самого параметра є останнім сегментом, 
+розділеним крапкою, а ім’я розділу – це все, що стоїть перед останньою крапкою.
+
+Розділи можна далі поділити на підрозділи. Щоб почати підрозділ, його назва уводиться 
+в подвійних лапках, відокремивши її від назви розділу пробілом.
 
 Особисті дані
 ~~~~~~~~~~~~~
 
 .. glossary:: 
 
-    ім'я користувача
-        ``git config --global user.name "..."``
-
-    e-mail
-        ``git config --global user.email ...``
+    ``config --global user.name "..."``
+        ім'я користувача
         
+    ``config --global user.email ...``
+        e-mail
+                
 Отримання довідки
 -----------------------
 
 .. glossary:: 
 
-    онлайн довідка
-        ``git help <command>``
-
-    коротка довідка
-        ``git <command> -h``
+    ``help <command>``
+        онлайн довідка
+        
+    ``<command> -h``
+        коротка довідка
+        
