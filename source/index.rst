@@ -12,16 +12,7 @@ Welcome to Pro Git's documentation!
    :hidden:
    :numbered:
 
-   1-getting-started
-   2-git-basics
-   branching
-   server
-   distributed-git
-   github
-   tools
-   customizing
-   other-systems
-   internals
+   git
 
 Indices and tables
 ==================
