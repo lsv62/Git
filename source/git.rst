@@ -10,7 +10,7 @@
         * Створіть repository (проект) за допомогою інструменту new сайті github
         * Скопіюйте (clone) репозиторій на вашу локальну машину
         * Додайте файл до свого локального репо та commit (збережіть) зміни
-        * Push ваші зміни до основної гілки
+        * Push ваші зміни до основної гілки віддаленого сховища
         * Внесіть зміни у свій файл за допомогою інструмента хостингу git і commit
         * Pull зміни на вашу локальну машину
         * Створіть branch (версію), внесіть зміни, commit зміни
@@ -53,8 +53,20 @@
 .. glossary::
 
     ``push``
-        * ''origin master`` - надсилає головну гілку на віддалений репозиторій
+        * ``origin master`` - надсилає головну гілку на віддалений репозиторій
+        * ``--all,  --branches`` - надсилає всі гілки на віддалений репозиторій
         
+Перенесення змін на локальний репозиторій
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. glossary::
+
+    ``fetch``
+        ``origin`` - отримати посилання на всі віддалені гілки
+
+    ``pull``
+        отримати та об’єднати віддалену гілку з поточною гілкою
+
 .. image:: _static/Transport-command.png
 
 Перевірка стану ваших файлів
@@ -222,16 +234,6 @@ Adding Remote Repositories
     ``remote add <shortname> <url>``
         add  a  new  remote  Git repository as a shortname you can reference easily
 
-Fetching and Pulling from Your Remotes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``fetch origin``
-        download references to all the branches from remote to merge in or inspect
-
-    ``pull``
-        fetch and merge remote branch to your current branch
 
 
 Inspecting a Remote
