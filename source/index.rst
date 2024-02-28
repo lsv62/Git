@@ -13,6 +13,7 @@ Welcome to Pro Git's documentation!
    :numbered:
 
    git
+   branching
 
 Indices and tables
 ==================

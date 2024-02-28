@@ -1,23 +1,24 @@
 
-Git Branching
-=============
-
-Branches in a Nutshell
-----------------------
-
-Commit object in Git repository contains: 
-
-    * commit object with  the  pointer  to  directory  tree  and  all  the  commit metadata;
-    * tree that lists the contents of the directory and specifies which file names are stored as blobs;
-    * blobs representing the contents of the files.
-
-Creating a New Branch
-~~~~~~~~~~~~~~~~~~~~~
+Створення нової гілки (версії)
+----------------------------------
 
 .. glossary::
 
-    ``branch <branch name>``
-        creates a new pointer called  ``HEAD`` to the commit you’re currently on but didn’t switch to 
+    ``branch``
+        * ``<branch name>`` - створює новий ``HEAD`` на поточний комміт, але не переключилися на нього
+        * ``-d <branch name>`` - видаляє гілку
+        * ``-v`` - виводить останній commit з кожної гілки
+        * ``--merged`` - виводить гілки вже об’єднані з поточною.
+         Гілки в цьому списку без * перед ними зазвичай можна видалити
+
+    ``branch --no-merged``
+        see all the branches that contain work you haven’t yet merge
+
+    ``branch -D <branch name>``
+        delete unmerged branch
+
+    ``branch --all``
+        lists both the local and the remote tracking branches
 
 Switching Branches
 ~~~~~~~~~~~~~~~~~~
@@ -46,8 +47,7 @@ It’s best  to  have  a  clean  working  state  by commiting changes when  you 
     ``merge <branch name>``
         merge the branch back into current branch
 
-    ``branch -d <branch name>``
-        delete branch
+
 
 Basic Merge Conflicts
 ~~~~~~~~~~~~~~~~~~~~~
@@ -60,21 +60,7 @@ Branch Management
 
 .. glossary::
 
-    ``branch -v``
-        To  see  the  last  commit  on  each branch
 
-    ``branch --merged``
-        see which branches are already merged into the branch you’re on.
-        Branches on this list without the * in front of them are generally fine to delete
-
-    ``branch --no-merged``
-        see all the branches that contain work you haven’t yet merge
-
-    ``branch -D <branch name>``
-        delete unmerged branch
-
-    ``branch --all``
-        lists both the local and the remote tracking branches
 
 Changing a branch name
 ~~~~~~~~~~~~~~~~~~~~~~
