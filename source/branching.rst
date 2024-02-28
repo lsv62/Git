@@ -1,25 +1,4 @@
 
-Створення нової гілки (версії)
-----------------------------------
-
-.. glossary::
-
-    ``branch``
-        * ``<branch name>`` - створює новий ``HEAD`` на поточний комміт, але не переключилися на нього
-        * ``-d <branch name>`` - видаляє гілку
-        * ``-v`` - виводить останній commit з кожної гілки
-        * ``--merged`` - виводить гілки вже об’єднані з поточною.
-         Гілки в цьому списку без * перед ними зазвичай можна видалити
-
-    ``branch --no-merged``
-        see all the branches that contain work you haven’t yet merge
-
-    ``branch -D <branch name>``
-        delete unmerged branch
-
-    ``branch --all``
-        lists both the local and the remote tracking branches
-
 Switching Branches
 ~~~~~~~~~~~~~~~~~~
 
