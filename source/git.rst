@@ -5,13 +5,13 @@
 .. glossary:: 
 
     ``config``
-        ``--system -l`` - конфігурація для всіх користувачів c:/Program Files/Git/etc/gitconfig
-        ``--global -l`` - конфігурація для користувача [user]/.gitconfig
-        ``--local -l`` - конфігурація для репозиторія .git/config
-        ``--global user.name "..."`` - ім'я користувача
-        ``--global user.email ...`` - e-mail
-        ``user.name "..."`` - ім'я користувача для проекта
-        ``user.email ...`` - e-mail для проекта
+        * ``--system -l`` - конфігурація для всіх користувачів c:/Program Files/Git/etc/gitconfig
+        * ``--global -l`` - конфігурація для користувача [user]/.gitconfig
+        * ``--local -l`` - конфігурація для репозиторія .git/config
+        * ``--global user.name "..."`` - ім'я користувача
+        * ``--global user.email ...`` - e-mail
+        * ``user.name "..."`` - ім'я користувача для проекта
+        * ``user.email ...`` - e-mail для проекта
 
 Отримання довідки
 -----------------------
@@ -180,27 +180,20 @@
 .. glossary::
 
     ``log``
-        перераховує коміти, зроблені в цьому сховищі, у зворотному хронологічному порядку
-
-    ``log - p``
-        показати зміни, внесені кожним комітом
-
-    ``log -2``
-        показати 2 остнніх коміта
-
-    ``log --pretty-oneline``
-        друкує кожен коміт в одному рядку
-
-Limiting Log Output
-~~~~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``log --since-2.weeks``
-         list of commits made in the last two week
-
-    ``log -- <path/to/file>``
-         limit the log output to commits that introduced a change to those file
+        * перераховує коміти у зворотному хронологічному порядку
+        * ``-p, --patch`` - показати зміни, внесені кожним комітом
+        * ``-<n>`` - показати n остнніх коміта
+        * ``--pretty=``
+            * ``oneline`` -  друкує кожен коміт в одному рядку
+            * ``format:``
+                * ``%h`` - Скорочений хеш коміту
+                * ``%an`` - Ім’я автора
+                * ``%ae`` - Поштова адреса автора
+                * ``%s`` - Тема
+        * ``--graph`` -  показує історію ваших гілок та зливань
+        * ``--since=2.weeks`` - список комітів за останні два тижні
+        * ``--until=2.weeks`` - список комітів до останніх двох тижнів
+        * ``--<path/to/file>`` - журналу комітів до файлів
 
 Unstaging a Staged File
 ~~~~~~~~~~~~~~~~~~~~~~~
