@@ -75,7 +75,7 @@
     ``commit`` 
         * ``-m "commit message"`` - dнести зміни
         * ``<file>`` - внести зміни до файлу
-        * ``--amend`` - змінити попередній комміт
+        * ``--amend`` - замінює попередній комміт поточним індексом
         * ``-a -m "message"`` - внести зміни з попереднім додаванням в індекс
 
 Опублікування змін
@@ -94,7 +94,7 @@
 .. glossary::
 
     ``fetch``
-        ``origin`` - отримати посилання на всі віддалені гілки
+        ``origin`` - забирає посилання на всі дані віддаленого сховища
 
     ``pull``
         отримати та об’єднати віддалену гілку з поточною гілкою
@@ -195,75 +195,37 @@
         * ``--until=2.weeks`` - список комітів до останніх двох тижнів
         * ``--<path/to/file>`` - журналу комітів до файлів
 
-Unstaging a Staged File
+Відмова від змін
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. glossary::
 
-    ``reset HEAD <file>``
-         unstage the file
+    ``reset``
+        * замінює поточний HEAD до вказаного стану
+        * ``HEAD <file>`` - вилучаэ файл з індексу
 
-Unmodifying a Modified File
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ``restore``
+        * заміняє файли в робочому директорії
+        * ``<file>`` - відновлює робоіий файл з індексу
+        * ``--staged <file>`` - відновлює файл в індексі з HEAD
+        * ``--staged --worktree <file>`` - відновлює робочий файл та індекс з HEAD
+        * ``--sourse=<tree>`` - вказує джерело для відновлення
 
-.. glossary::
+    ``checkout``
+        * перемикає гілки або замінює робочі файли
+        * `` -- <file>`` - скасовує зміни в робочому каталозі
 
-    ``checkout -- <file>``
-        discard changes in working directory
-
-Undoing things with git restore
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``restore --staged <file>``
-        unstage file
-
-    ``restore <file>``
-        discard the changes in file
-
-Working with Remotes
---------------------
-
-Showing Your Remotes
-~~~~~~~~~~~~~~~~~~~~
+Взаємодія з віддаленими сховищами
+-------------------------------------
 
 .. glossary::
 
-    origin
-        name Git gives to the server you cloned from
-
-    ``remote -v``
-        shows you the remote server URLs with reading and writing access
-
-Adding Remote Repositories
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``remote add <shortname> <url>``
-        add  a  new  remote  Git repository as a shortname you can reference easily
-
-
-
-Inspecting a Remote
-~~~~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``remote show origin``
-        lists the URL for the remote repository as well as the tracking branch information
-
-Renaming and Removing Remotes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``remote rename <old name> <new name>``
-        change a remote's shortname
-
-    ``remote remove <name>``
-         remove a remote
+    ``remote``
+        ``-v`` - показує URL-адреси віддаленого сервера з доступом для читання та запису
+        ``add <shortname> <url>`` - додає нове віддалене сховище Git
+        ``show origin`` - показує URL-адресу віддаленого сховища, а також інформацію про гілку відстеження
+        `` rename <old name> <new name>`` - змінює ім'я віддаленого сховища
+        ``remove <name>`` - видаляє посилання на віддалене сховище
 
 Tagging
 -------
