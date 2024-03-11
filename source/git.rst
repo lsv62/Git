@@ -87,6 +87,9 @@
         * ``origin master`` - надсилає головну гілку на віддалений репозиторій
         * ``--all,  --branches`` - надсилає всі гілки на віддалений репозиторій
         * ``<remote_name> -d, --delete <remote_branch-name>`` - видалення віддалених гілок
+        * ``origin <tagname>`` - надсилає тег на віддалений репозиторій
+        * ``origin --tags`` - надсилає всі тегі на віддалений репозиторій
+        * ``origin --delete <tagname>`` - видаляє тег з віддаленого репозиторію
         
 Перенесення змін на локальний репозиторій
 ---------------------------------------------
@@ -214,6 +217,7 @@
     ``checkout``
         * перемикає гілки або замінює робочі файли
         * `` -- <file>`` - скасовує зміни в робочому каталозі
+        * ``<tagname>`` - виводить версію файла, помічену тегом
 
 Взаємодія з віддаленими сховищами
 -------------------------------------
@@ -227,70 +231,16 @@
         * ``rename <old name> <new name>`` - змінює ім'я віддаленого сховища
         * ``remove <name>`` - видаляє посилання на віддалене сховище
 
-Tagging
--------
-
-Listing Your Tags
-~~~~~~~~~~~~~~~~~
+Встановлення тегів
+----------------------
 
 .. glossary::
 
     ``tag``
-        listing your Tags
-
-Annotated Tags
-~~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``tag -a <tagname> -m "tag message"``
-        Create  an  annotated  tag
-
-    ``show <tag version>``
-        see the tag data along with the commit that was tagged
-
-Lightweight Tags
-~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``tag <tagname>``
-         tag commits with a lightweight tag
-
-Tagging Later
-~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``tag -a <tagname> <part of commit checksum>``
-         tag commit with the commit checksum
-
-Sharing Tags
-~~~~~~~~~~~~
-
-.. glossary::
-
-    ``push origin <tagname>``
-         transfer tags to remote server
-
-    ``push origin --tags``
-         a lot of tags to push up at on server
-
-Deleting Tags
-~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``tag -d <tagname>``
-         delete  a  tag  on  local  repository
-
-    ``push origin --delete <tagname>``
-         remove the tag from any remote servers
-
-Checking out Tags
-~~~~~~~~~~~~~~~~~
-
-.. glossary::
-
-    ``checkout <tagname>``
-         view the versions of files a tag is pointing to
+        * виводить список тегів
+        * ``-l <pattern>`` - виводить список тегів за шаблоном
+        * ``show <tag version>`` - виводить тег разом із комітом, який було позначено тегом        
+        * ``<tagname>`` - створює легкий тег 
+        * ``-a <tagname> -m "tag message"`` - створює анотований тег        
+        * ``-a <tagname> <commit checksum>`` - створює тег до існуючого коміту
+        * ``-d <tagname>`` - видаляє тег з локального репозиторію
