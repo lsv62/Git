@@ -13,7 +13,6 @@
    :numbered:
 
    git
-   branching
 
 Indices and tables
 ==================
