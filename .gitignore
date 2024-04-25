@@ -1,4 +1,6 @@
-build/
+_build/
 *.pod
 *.bat
 *.pdf
+conf.py
+Makefile
