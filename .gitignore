@@ -4,3 +4,4 @@ _build/
 *.pdf
 conf.py
 Makefile
+build/
